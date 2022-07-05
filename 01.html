@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>silver lluvia</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+      * {
+        background-color:rgb(255, 188, 106);
+        font-family: 'Nanum Myeongjo', serif;
+      }
+      * ::selection {
+        background-color: blanchedalmond;
+      }
+      #container {
+        padding: 50px;
+        margin: 0 auto;
+      }
+      h1 {
+        margin-top: 300px;
+        margin-bottom: 0px;
+        font-size: 100px;
+        color: black;
+      }
+      #myNameIs {
+        font-size: 70px;
+      }
+      #profile {
+        float: left;
+      }
+      #profile img {
+        display: inline-block;
+      }
+      .navi {
+        float:right;
+      }
+      .navi ul {
+        list-style-type: none;
+      }
+      .navi ul li { 
+        display: inline;
+        font-size: 30px;
+        width: 80px;
+        margin: 50px;
+      }
+      .navi a:link, .navi a:visited {
+        color: black;
+        text-decoration: none;  /* 밑줄 없앰 */
+        text-align: center;
+      }
+      .navi a:hover, .navi a:focus {
+        color: rgb(245,248,240);
+      }
+      .navi a:active {
+        color: rgb(245,248,240);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <div id="profile">
+          <h1>Hi!<br><span id="myNameIs">I'm silver lluvia</span></h1>
+          <img src="images/profile.png" alt="profile">
+        </div>
+      </main>
+      <nav class="navi">
+        <ul>
+          <li><a href="#" onclick="alert('profile을 보여줄게...')">profile</a></li>
+          <li><a href="https://blog.naver.com/eb0313" target="_blank">blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
